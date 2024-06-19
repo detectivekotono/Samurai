@@ -20,7 +20,7 @@ h1 {
     margin: 20px 0;
 }
 .contents>p::before{
-    content: "🔸";
+    content: "◆";
     color: orange;
 }
 .contents>p::first-letter{
