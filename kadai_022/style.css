@@ -1,11 +1,12 @@
-@media screen and(min-width: 1024px) {
-    div{
+@media screen and(max-width: 768px) {
+    div>.contents {
         display: flex;
     }
 }
-@media screen and(max-width: 1024px) {
-    div{
-        display: inline-block;
+
+@media screen and(min-width: 768px) {
+    div>.contents {
+        display: block;
     }
 }
 
@@ -20,17 +21,39 @@ h1 {
     justify-content: space-around;
 }
 
+h1,
+#parent,
+footer {
+    text-align: center;
+}
+
 .contents {
     border: solid 3px rgb(238, 204, 204);
     padding: 10px 15px;
     margin: 20px 0;
 }
-.contents>p::before{
-    content: "◆";
-    color: orange;
+
+h2::before {
+    content: "●";
+    color: rgb(238, 111, 139);
 }
-.contents>p::first-letter{
-    font-size: 24px;
+
+h2 {
+    font-size: 25px;
     font-weight: bold;
-    color: aqua;
+    border-bottom: dashed rgb(238, 111, 139);
+}
+
+.contents p:nth-of-type(2)::first-letter {
+    color: rgb(97, 206, 249);
+    font-weight: bold;
+}
+
+footer {
+    background-color: rgb(244, 79, 79);
+    color: rgb(255, 255, 255);
+}
+
+a:visited {
+    color: rgb(193, 255, 255);
 }
