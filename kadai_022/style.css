@@ -71,8 +71,6 @@ a:visited {
     color: rgb(193, 234, 168);
 }
 
-
-
 @media screen and (max-width: 768px) {
     h2 {
         font-size: 30px;
