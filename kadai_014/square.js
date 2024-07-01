@@ -1,4 +1,4 @@
 const mul = (num) => {
-  console.log(num * 10);
+  console.log(num * num);
 };
 mul(10);
