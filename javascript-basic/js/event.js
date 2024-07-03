@@ -39,3 +39,16 @@ areaBtn.addEventListener("click", () => {
   const area = document.forms.areaForm.area.value;
   console.log(area);
 });
+//os-btnというidを持つHTML要素を取得し、定数に代入する
+const osBtn=document.getElementById("os-btn");
+//HTML要素がクリックされたときにイベント処理を実行する
+osBtn.addEventListener("click",()=>{
+  //すべてのチェックボックスを配列風のデータで取得する
+  const items =document.forms.osForm.os;
+//繰り返し処理でチェックボックスを1つずつ取り出し、もし選択されていれば値を出力する
+for (let i = 0; i < items.length; i++) {
+  if (items[i].clicked) {
+    console.log(items[i].value);
+  }  
+}
+});
