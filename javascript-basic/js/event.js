@@ -17,3 +17,18 @@ addBtn.addEventListener("click", () => {
   // 作成したli要素をul要素の子要素として末尾に追加する
   parentList.appendChild(childList);
 });
+// textFormというname属性を持つフォームを取得する
+document.forms.textForm;
+// textBoxというname属性を持つテキストボックスを取得する
+document.forms.textForm.textBox;
+// textBoxというname属性を持つテキストボックスの値を取得する
+document.forms.textForm.textBox.value;
+// count-btnというidを持つHTML要素を取得し、定数に代入する
+const countBtn = document.getElementById("count-btn");
+// HTML要素がクリックされたときにイベント処理を実行する
+countBtn.addEventListener("click", () => {
+  // テキストボックスに入力された文字列を取得する
+  const text = document.forms.textForm.textBox.value;
+  // 取得した文字列の文字数を出力する
+  console.log(text.length + "文字");
+});
