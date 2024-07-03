@@ -32,3 +32,10 @@ countBtn.addEventListener("click", () => {
   // 取得した文字列の文字数を出力する
   console.log(text.length + "文字");
 });
+
+const areaBtn = document.getElementById("area-btn");
+// HTML要素がクリックされたときにイベント処理を実行する
+areaBtn.addEventListener("click", () => {
+  const area = document.forms.areaForm.area.value;
+  console.log(area);
+});
