@@ -1,5 +1,5 @@
-//東京都の天気予報データを取得するためのURL
-const url = "https://www.jma.go.jp/bosai/forecast/data/forecast/130000.json";
+//東京都の天気予報データを取得するためのURL(270000)部分を変更すると地域が変わる
+const url = "https://www.jma.go.jp/bosai/forecast/data/forecast/270000.json";
 //イベント処理の対象となるボタン
 const button = document.getElementById("ajax-btn");
 //ボタンのクリック時にイベント処理を実行する
