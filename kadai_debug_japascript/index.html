@@ -122,10 +122,10 @@
 
     // アラートを開始する関数
     function startAlert() {
-      let alertInterval = setInterval(() => {
+      alertInterval = setInterval(() => { // 修正後
         document.body.style.backgroundColor = document.body.style.backgroundColor === 'red' ? 'white' : 'red';
       }, 1000);
-      document.getElementById('alertStop').classList.remove('hidden')
+      document.getElementById('alertStop').classList.remove('hidden');
     }
 
     // アラートを停止する関数
