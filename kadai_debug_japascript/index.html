@@ -110,6 +110,7 @@
     // カウントダウンをリセットする関数
     function resetCountdown() {
       clearInterval(countdownInterval);
+      isPaused = false
       updateTimer();
       setMode("restart");
     }
