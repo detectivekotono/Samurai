@@ -24,3 +24,10 @@ for i in range(1,11):
     if i %2==1:
         continue
     print(i)
+
+    inport random
+    num=random.randint(0,4)
+    print(f"最初の値は{num}です。")
+    while num !=0:
+        num = random.randint(0,4)
+        print(f"現在の値は{num}です。")
