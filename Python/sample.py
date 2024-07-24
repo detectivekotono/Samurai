@@ -10,8 +10,7 @@ print(user_names)
 for i in range(1,11):
     print(i)
     if i==5:
-        break
-    
+        break  
     import random
 
 for i in range(1,11):
