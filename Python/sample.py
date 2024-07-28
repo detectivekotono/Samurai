@@ -38,3 +38,30 @@ def say_good_evening():
 say_good_morning()
 #夜の挨拶を出力する関数を呼び出す
 say_good_evening()
+
+def calculate_total(price):
+#与えられた引数priceに送料を加算し、変数totalに代入する
+    total=price+500
+#変数totalの値を出力する
+    print(f"{total}円")
+#関数を呼び出し、引数として購入金額を渡す
+calculate_total(1000)
+
+def add_two_arguments(price,shippng_fee):
+#与えられた引数priceと引数shipping_feeを加算し、変数totalに代入する
+    total = price+shippng_fee
+#変数totalの値を出力する
+    print(f"{total}円")
+add_two_arguments(2000,500)
+
+#購入済みかどうかを判定する変数
+purchased=True
+#戻り値を返す関数を定義する
+def is_purchased():
+    if(purchased):
+        return True
+    else:
+        return False
+#戻り値を返す関数を条件式に使う(Trueであれば処理が実行される)
+if (is_purchased()):
+    print("商品は購入済みです。")
