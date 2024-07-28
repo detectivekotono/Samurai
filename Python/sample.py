@@ -25,9 +25,16 @@ for i in range(1,11):
         continue
     print(i)
 
-    inport random
-    num=random.randint(0,4)
-    print(f"最初の値は{num}です。")
-    while num !=0:
-        num = random.randint(0,4)
-        print(f"現在の値は{num}です。")
+#朝の挨拶を出力する関数を作成する
+def say_good_morning():
+    print("おはようございます！")
+    print("昨日はよく眠れましたか？")
+    print("今日も一日頑張りましょう")
+#夜の挨拶を出力する関数を作成する 
+def say_good_evening():
+    print("こんばんは！")
+    print("今日も一日お疲れ様でした。")
+#朝の挨拶を出力する関数を呼び出す
+say_good_morning()
+#夜の挨拶を出力する関数を呼び出す
+say_good_evening()
