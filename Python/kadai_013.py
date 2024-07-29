@@ -1,4 +1,3 @@
-def add_two_arguments(price,fee):
-    total=price*fee
-    print(f"{total}円")
-add_two_arguments(100,1.10)
+def add_two_arguments(price,tax):
+    return price +(price*tax/100) 
+print(add_two_arguments(100,10))
